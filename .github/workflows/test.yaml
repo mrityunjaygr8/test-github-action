@@ -1,0 +1,13 @@
+name: TEST::A test workflow to test how to model the github action
+on:
+  create:
+    tags:
+      - dev-*
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Echo
+        run: |
+          echo date
