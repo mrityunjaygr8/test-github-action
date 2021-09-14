@@ -1,8 +1,6 @@
 name: TEST::A test workflow to test how to model the github action
 on:
   create:
-    tags:
-      - dev-*
 
 jobs:
   deploy:
